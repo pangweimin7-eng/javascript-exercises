@@ -18,24 +18,19 @@ const subtract = function(num1, ...args) {
 };
 
 const sum = function(arr) {
-	let sum = 0 ; 
-  for (const num of arr ){
-    sum += num;
-  }
-
-  return sum;
+	return arr.reduce((acc, curr) => acc + curr, 0)
 };
 
-const multiply = function() {
-
+const multiply = function(arr) {
+  return arr.reduce((acc, curr) => acc * curr, 1);
 };
 
-const power = function() {
-	
+const power = function(n1, n2) {
+	return n1**n2;
 };
 
-const factorial = function() {
-	
+const factorial = function(n) {
+  return (n <= 1) ? 1 : n * factorial(n-1);
 };
 
 // Do not edit below this line
